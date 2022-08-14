@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply   rounded-lg overflow-hidden shadow-3xl  relative;
+}
+.badge{
+    @apply  uppercase bg-mono text-xs  border-b border-green text-black font-bold rounded-full p-2 absolute top-1 mt-2 ml-2;
+}
+.btn{
+    @apply   border border-offgreen transition duration-200  rounded-full py-2 px-3 shadow-3xl h-6 uppercase text-xs font-bold cursor-pointer tracking-wider; 
+}
+
+
+.hov{
+   @apply  hover:bg-wind transition-all  hover:border-white bottom-2 ;
+}
+.btn2{
+  @apply border-2 border-wind w-6 h-6 p-2 rounded-full transition-all hover:bg-darkwind hover:-translate-y-2 hover:border-2 hover:border-white;
+}
+.tex{
+  
+font-size: 16rem;
+
+    font-weight: bold;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: back 7s linear infinite;
+  }
+
+@keyframes back{
+   100%{
+    background-position: 0;
+   }
+}
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  /* new */
+  
+  details.styled{
+    max-height: 30px;
+    transition:all 0.8s ease-in-out ;
+    overflow: hidden;
+  }
+details[open].styled{
+  max-height: 500px;
+}
+  details.styled summary{
+    outline: none;
+    cursor: pointer;
+  }
+ 
+  /* logo spinner */
+  .loader-circle{
+    animation: animate 10s linear infinite;
+  width: 23rem;
+}
+
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
