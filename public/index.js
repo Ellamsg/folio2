@@ -1,7 +1,5 @@
 
-
-
-
+//hamburger toggle
 
 $(document).ready(function () {
     $(".nav-toggler").each(function (_, navToggler) {
@@ -14,6 +12,7 @@ $(document).ready(function () {
     });
   });
 
+//scroll on reveal animation
   window.addEventListener('scroll', reveal);
 
    function reveal(){
@@ -33,6 +32,7 @@ $(document).ready(function () {
        }
      }
    }
+   // javascript real time
    setInterval(() => {
 
    const time = document.querySelector(".time")
