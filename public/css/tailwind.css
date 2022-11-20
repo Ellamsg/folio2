@@ -856,6 +856,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-contain {
   background-size: contain;
 }
@@ -1118,8 +1122,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 16rem;
   font-weight: bold;
   text-align: center;
-  background-position: center center;
-  background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
   background-clip: text;
@@ -1239,6 +1241,10 @@ details.styled summary{
 
   .md\:gap-6 {
     gap: 56px;
+  }
+
+  .md\:bg-contain {
+    background-size: contain;
   }
 
   .md\:object-fill {
