@@ -21,6 +21,11 @@
 .btn2{
   @apply border-2 border-wind w-6 h-6 p-2 rounded-full transition-all hover:bg-darkwind hover:-translate-y-2 hover:border-2 hover:border-white;
 }
+
+.round{
+  @apply border-2 rounded-md px-2  border-wind;
+
+}
 .tex{
   
 font-size: 16rem;

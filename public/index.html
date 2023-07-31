@@ -231,201 +231,102 @@ body{
     </div>
   </div>
 
+
   <!--my works slider-->
 
 
-  <section class=" p-5  ">
+  <section class=" p-5 grid gap-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 ">
 
-    <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 0,
-  
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 0,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 0,
-        },
-      },
-    })" class="relative mx-auto flex flex-row">
-      <div class="absolute inset-y-0 left-0 z-10 flex items-center">
-        <button @click="swiper.slidePrev()"
-          class="bg-white -ml-2 lg:-ml-4 flex justify-center items-center w-10  rounded-full shadow focus:outline-none">
-          <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6">
-            <path fill-rule="evenodd"
-              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
+    <div class="border-wind border-2 text-center text-white px-4 py-2 ">
+      <h1 class="text-3xl">NEXT</h1>
+      
+      <div>
+        <img src="page/talentplus1.png" />
       </div>
-
-      <div class="swiper-container " x-ref="container">
-        <div class="swiper-wrapper  ">
-          <!-- Slides -->
-
+      <div class=" flex text-[14px] py-2 justify-between">
        
-
-          <div class="swiper-slide  ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0">
-                <img class="h-8 object-contain " src="page/dance-el.png" alt="">
-                <p class=" text-white  text-center  ">DANCE STUDIO</p>
-                <p class="border-2 animate-bounce border-wind text-white
-             hover:bg-darkwind text-center bottom-0 "><a href="https://dance-el.netlify.app">live site</a> </p>
-
-              </div>
-            </div>
-          </div>
-
-
-          <div class="swiper-slide  ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0">
-                <img class="h-8 object-contain " src="page/nowplaying.png" alt="">
-                <p class=" text-white  text-center  ">SPOTIFY NOW PLAYING</p>
-                <p class="border-2 animate-bounce border-wind text-white
-             hover:bg-darkwind text-center bottom-0 "><a href="https://ellams-now-playing.netlify.app/">live site</a> </p>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide  ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0">
-                <img alt="nifemi-folio object-contain bg-center" class="h-8" src="page/nife-graph.png" alt="">
-                <p class=" text-white  text-center  ">NIFE PHTOGRAPHY</p>
-                <p class="border-2 animate-bounce border-wind text-white
-             hover:bg-darkwind text-center bottom-0 "><a href="https://nife-graphy1.netlify.app">live site</a> </p>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide   bg-contain ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0 h-48">
-                <img class="h-8" src="page/Screenshot 2022-08-10 at 18-13-28 Ellams portfolio.png">
-                <p class=" text-white  text-center   ">PORTFOLIO V2</p>
-                <p class="border-2 animate-bounce border-wind text-white hover:bg-darkwind text-center"><a
-                    href="https://ellamsfolio.netlify.app"> live site</a></p>
-
-              </div>
-            </div>
-          </div>
-
-       
-
-          <div class="swiper-slide   bg-contain ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0 h-48">
-                <img class="h-8" src="page/monte.png">
-                <p class=" text-white  text-center   ">FOOD RECIPE API</p>
-                <p class="border-2 animate-bounce border-wind text-white hover:bg-darkwind text-center"><a
-                    href="https://monte-food-api-recipe.netlify.app"> live site</a></p>
-
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide   bg-contain ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0 h-48">
-                <img class="h-8" src="page/musica.png">
-                <p class=" text-white  text-center   ">MUSICA</p>
-                <p class="border-2 animate-bounce border-wind text-white hover:bg-darkwind text-center"><a
-                    href="https://music-ellams.netlify.app/"> live site</a></p>
-
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="swiper-slide bg-contain ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0">
-                <img class="h-8" src="page/theme-switcher.png" alt="">
-                <p class=" text-white  text-center  ">Theme switcher</p>
-                <p class="border-2 animate-bounce border-wind text-white
-             hover:bg-darkwind text-center bottom-0 "><a href="https://weatherly-hng-switchtheme.netlify.app"> live site</a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide bg-contain ">
-            <div class="flex flex-col  rounded shadow overflow-hidden">
-              <div class="flex-shrink-0  relative text-white ">
-                <img class="h-8 " src="page/air bnb.png">
-                <p class=" text-white  text-center   ">Meta bnb</p>
-                <p class="border-2 animate-bounce border-wind text-white hover:bg-darkwind text-center"><a
-                    href="https://airbnb-ellams.netlify.app/"> live site</a></p>
-
-              </div>
-            </div>
-
-          </div>
-
-         
-          <div class="swiper-slide  ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0">
-                <img alt="nifemi-folio" class="h-8" src="page/tenzies.png" alt="">
-                <p class=" text-white  text-center  ">Tenzies Game</p>
-                <p class="border-2 animate-bounce border-wind text-white
-             hover:bg-darkwind text-center bottom-0 "><a href="https://nife-graphy1.netlify.app">live site</a> </p>
-
-              </div>
-            </div>
-          </div>
-
-
-
-         
-
-
-
-          <div class="swiper-slide  ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0">
-                <img class="h-8" src="page/Screenshot 2022-08-10 at 17-52-39 Shopping Cart JS.png" alt="">
-                <p class=" text-white  text-center  ">EL-SHOP</p>
-                <p class="border-2 animate-bounce border-wind text-white
-             hover:bg-darkwind text-center bottom-0 "><a href="https://testmakt.netlify.app">live site</a> </p>
-
-              </div>
-            </div>
-          </div>
-
-
-
+       <p class="round"> React js</p>
+        <p class="round">Tailwind css</p>
+        <p class="round">Javascript</p>
+        <p class="round">Docker</p>
+      </div>
+      <p class=" text-left text-[14px]">A Landing page website i built for talent plus as part of My
+        interview assessment
+      </p>
+      
+   
+      <div class="flex justify-between">
+        <div>
+          <i class="fa-sharp fa-solid fa-link"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-github"></i>
         </div>
       </div>
-
-      <div class="absolute inset-y-0 right-0 z-10 flex items-center">
-        <button @click="swiper.slideNext()"
-          class="bg-white -mr-2 lg:-mr-4 flex justify-center items-center w-10  rounded-full shadow focus:outline-none">
-          <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6">
-            <path fill-rule="evenodd"
-              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </div>
     </div>
+
+    <div class="border-wind border-2 text-center text-white px-4 py-2 ">
+      <h1 class="text-3xl">NEXT</h1>
+      
+      <div>
+        <img src="page/tenzies.png" />
+      </div>
+      <div class=" flex text-[14px] py-2 justify-between">
+       
+       <p class="round"> React js</p>
+        <p class="round">Tailwind css</p>
+        <p class="round">Javascript</p>
+        <p class="round">Docker</p>
+      </div>
+      <p class=" text-left text-[14px]">A Landing page website i built for talent plus as part of My
+        interview assessment
+      </p>
+      
+   
+    1
+    <div class="bg-white text-center text-black px-4 py-2 ">
+      <h1 class="text-4xl">NEXT</h1>
+      
+      <div>
+        <img src="page/talentplus1.png" />
+      </div>
+      <div class=" flex py-3 justify-between">
+       
+       <h1 class=""> REACT JS</h1>
+        <h1 class="">TAILWIND CSS</h1>
+        <h1 class="">JAVASCRIPT</h1>
+        <h1 class="">DOCKER</h1>
+      </div>
+      <p class=" text-left">A Landing page website i built for talent plus as part of My
+        interview assessment
+      </p>
+      
+    </div>
+    <div class="bg-white text-center text-black px-4 py-2 ">
+      <h1 class="text-4xl">NEXT</h1>
+      
+      <div>
+        <img src="page/talentplus1.png" />
+      </div>
+      <div class=" flex py-3 justify-between">
+       
+       <h1 class=""> REACT JS</h1>
+        <h1 class="">TAILWIND CSS</h1>
+        <h1 class="">JAVASCRIPT</h1>
+        <h1 class="">DOCKER</h1>
+      </div>
+      <p class=" text-left">A Landing page website i built for talent plus as part of My
+        interview assessment
+      </p>
+      
+    </div>
+
+
+    
 
     <!--End of slider-->
 
   </section>
-
-
 
 
 
